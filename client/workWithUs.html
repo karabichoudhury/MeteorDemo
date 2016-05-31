@@ -1,0 +1,65 @@
+<template name="work">
+	<div style="display: block; overflow: visible;" class="slidingDiv3 opened" id="slidingDiv3">
+		<div class="up-arrow4"></div>
+		<p>RakSan Consulting is a start-up with  exciting ideas and an unflinching mission to deliver value to our clients. We  are obsessed with integrity, quality consciousness and honesty in all our  actions. </p>
+		<p>We are a group of like-minded and focused  individuals always on a look out for the right person. If you share similar  ideals and are interested in teaming up with us, come join us in the US and  India.&nbsp;</p>
+		<p>We value diversity and  inclusion and are committed to equal employment opportunity provisions.  &nbsp;Fledging may be, but we aspire to be counted amongst the best in our  realm. &nbsp;We are keen to connect with anyone and to join us in our endeavor  to be successful. Presently we have openings in the below technology areas for  all kinds of experience with career paths in Consulting, Development, Training,  Deployment, Testing and Support</p>
+		<ol>
+			{{#each jobs}}
+  			<li>{{name}}</li>
+  			{{/each}}
+  		</ol>
+		<p>&nbsp;</p>
+		<p>Inviting  all experienced professionals to email us their resume’ on <a href="mailto:youneedme@raksanconsulting.com">youneedme@raksanconsulting.com</a>.</p>
+
+		<p>If your  stream is not listed, and you think you can deliver value to us, then please  email on <a href="mailto:icanaddvalue@raksanconsulting.com">iamspecial@raksanconsulting.com</a> with a note to tell us why? </p>
+
+		<p>We  value interns as much as experienced personnel and welcome all college pass  outs to apply with us by emailing us on <a href="mailto:ineedajob@raksanconsulting.com">ineedajob@raksanconsulting.com</a>. </p>
+		<p>&nbsp;</p>
+
+		<h3> Leave your details here</h3>
+		<form id="candidateForm">
+			<div class="row">
+				<section class="col col-3">
+                    <label class="label black">Name</label>
+                </section>
+                <section class="col col-6">
+                    <label class="input">
+                        <input type="text" name="candidateName" id="candidateName" placeholder="Enter Name"
+                                   />      
+                    </label>                            
+                </section>
+			</div>
+			<div class="row">
+				<section class="col col-3">
+                    <label class="label black">Email</label>
+                </section>
+                <section class="col col-6">
+                    <label class="input">
+                        <input type="text" name="candidateEmail" id="candidateEmail" placeholder="Enter email"
+                                   />      
+                    </label>                            
+                </section>
+			</div>
+			<div class="row">
+				<section class="col col-3">
+                    <label class="label black">Expertise</label>
+                </section>
+                <section class="col col-6">
+                    <label class="textarea">
+                        <textarea  name="candidateExpertise" id="candidateExpertise" placeholder="Enter your skills"
+                                   ></textarea>      
+                    </label>                            
+                </section>
+			</div>
+			<div class="row btn_rig">
+				<button id="save" class="button">Save
+                    <span id="saveSpinner" style="display: none;">
+                        <i class="fa fa-spinner fa-spin"></i>
+                    </span>
+                </button>
+			</div>
+		</form>
+
+	</div>
+</template>

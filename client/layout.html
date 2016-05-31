@@ -1,0 +1,27 @@
+<template name="layout">
+
+	<div class="header">
+        
+		<div class="logo"><h1><a href="{{pathFor 'home'}}"><img src="img/logo.png" alt="Raksan Consulting" title="Raksan Consulting" border="0"></a></h1></div>  <div class="header-middle-text">raksan consulting <span style="font-size:62%;align:"> {{>loginButtons}}</span> </div>
+		<div class="container">
+			<div class="devider"></div>
+			<div class="container-inner">
+				<div class="dock" id="dock2">
+					{{> navigation}}
+				
+				</div>
+					
+					<div style="margin-top:90px; position:relative;">
+						{{> yield}}
+						
+					</div>
+				<div class="devider"></div>
+				{{> footer}} 
+			</div>
+
+			
+	
+			
+		</div>
+	</div>
+</template>
